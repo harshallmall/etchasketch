@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Etch A Sketch</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body background="borealis.jpg">
+	<header class="header">
+		<h1 class="title">Etch A Sketch&reg;</h1>
+	</header>
+	<main class="main">
+		<div class="settings">
+			<input id="colorSelector" type="color" value="#333333">
+			<button id="colorButton" class="active">Color Mode</button>
+			<button id="multiColorButton" class>Multi-Color Mode</button>
+			<button id="eraserButton" class>Eraser</button>
+			<button id="shakeButton" class>Shake It</button>
+			<div id="gridValue" class="grid-value">16 x 16</div>
+			<input id="gridSlider" type="range" value="16" min="1" max="64">
+        </div>
+		
+		<div class="grid-border">
+		<div id="grid" class="grid" style="grid-template-columns: repeat(16, 1fr); grid-template-rows: repeat(16, 1fr);">
+		</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<p>Copyright&copy; <script>document.write(new Date().getFullYear())</script>
+		<a href="https://github.com/harshallmall" target="_blank" style="text-decoration: none;">harshallmall</a></p>
+	</footer>
+	<script src="etchasketch.js"></script>
+</body>
+</html>

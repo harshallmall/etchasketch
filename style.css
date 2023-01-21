@@ -1,0 +1,126 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+body {
+  margin-bottom: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  background-size: cover;
+}
+  
+h1 {
+  line-height: 0.10;
+}
+
+button,
+input {
+  width: 100%;
+  border: none;
+  color: powderblue;
+  background-color: purple;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  color: powderblue;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 160px; 
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid var(--primary-dark);
+}
+
+button.active {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+}
+
+button,
+input[type='color'] {
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.05);
+}
+
+input[type='color']:active {
+  transition: transform 0.05s;
+  transform: scale(1);
+}
+
+input[type='color'] {
+  width: 80px;
+  height: 80px;
+  border: none;
+}
+
+.grid-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  background-color: red;
+  border-radius: 32px;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+.grid-element {
+  user-select: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 24px;
+  color: purple;
+}
+  
+a { 
+  color: purple; 
+} 
