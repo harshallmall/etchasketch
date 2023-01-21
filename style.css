@@ -125,7 +125,7 @@ a {
   color: purple; 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .main {
     justify-content: center;
   }
@@ -137,17 +137,18 @@ a {
   }
 
   .settings {
-    width: 150px;
-    gap: 16px;
-  }
-
-  .size-value {
-    margin-bottom: -4px;
+    width: 100px;
+    gap: 14px;
   }
 
   .grid {
     width: 400px;
     height: 400px;
+  }
+
+  .grid-border {
+    width: 500px;
+    height: 500px;
   }
 }
 
@@ -163,5 +164,10 @@ a {
   .grid {
     width: 300px;
     height: 300px;
+  }
+
+  .grid-border {
+    width: 400px;
+    height: 400px;
   }
 }
